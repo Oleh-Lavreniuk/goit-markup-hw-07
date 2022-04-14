@@ -1,43 +1,6 @@
 /* .outline {
   outline: 2px solid tomato;
 } */
-/* === START COMPONENTS=== */
-
-.logo {
-  /* Logo used to header and footer */
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.h-logo-s {
-  color: var(--header-logo-sec-color);
-}
-
-.navigation,
-.header-contacts-list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.text-bold {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.text-normal-fourteen {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-/* === END COMPONENTS=== */
 
 /* ===HEADER=== */
 .header {
@@ -47,13 +10,19 @@
   background-color: var(--background-color-light);
 }
 
-.hdr-container {
-  display: flex;
-  align-items: center;
+.h-logo-s {
+  color: var(--header-logo-sec-color);
 }
 
 .navigation {
   margin-left: 94px;
+}
+
+.header-text-style {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .nav-list {
@@ -97,14 +66,14 @@
 .header-contacts {
   margin-left: auto;
 }
+.header-contacts-list {
+}
 
 .header-contacts-list:not(:first-child) {
   margin-left: 50px;
 }
 
 .contacts-list-link {
-  display: flex;
-  align-items: center;
   color: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -324,40 +293,6 @@
   color: var(--secondary-text-color);
 }
 
-.staff-person-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.staff-list-item {
-  max-width: 100%;
-}
-
-.staff-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.staff-list-link:hover,
-.staff-list-link:focus {
-  background-color: var(--accent-color);
-}
-
-.staff-list-link:hover .staff-icon,
-.staff-list-link:focus .staff-icon {
-  fill: var(--text-color-light);
-}
-
-.staff-icon {
-  fill: var(--icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* MAIN - SECTION-4 "clients" */
 .clients {
 }
@@ -378,10 +313,8 @@
 }
 
 .client-item-link {
-  display: flex;
   width: 170px;
   height: 92px;
-  align-items: center;
   justify-content: center;
 
   border: 1px solid var(--icon-color);
@@ -620,32 +553,12 @@
 }
 
 .footer-join-title {
+  margin-bottom: 20px;
   color: var(--text-color-light);
 }
 
-.footer-join-list {
-  display: flex;
-  margin-top: 20px;
-  justify-content: space-between;
-}
-
-.join-list-item {
-}
-
 .join-list-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   background: var(--footer-link-bg);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.join-list-link:hover,
-.join-list-link:focus {
-  background-color: var(--accent-color);
 }
 
 .join-icon {
@@ -691,10 +604,8 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-form-btn {
-  display: flex;
   padding: 8px 26px;
   justify-content: space-between;
-  align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .footer-form-icon {
@@ -738,9 +649,7 @@
   top: 8px;
   right: 8px;
 
-  display: flex;
   justify-content: center;
-  align-items: center;
 
   width: 30px;
   height: 30px;
@@ -835,8 +744,6 @@
   margin-bottom: 30px;
 }
 .contact-form-checkbox-label {
-  display: flex;
-  align-items: center;
   font-style: normal;
   color: var(--secondary-text-color);
 }
