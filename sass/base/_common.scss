@@ -1,3 +1,7 @@
+/* css rules to specify families
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 .main-body {
     font-family: "Roboto", sans-serif;
     color: var(--main-text-color);
@@ -33,4 +37,9 @@ img {
 
 .link {
     text-decoration: none;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
