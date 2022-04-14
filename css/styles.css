@@ -2,50 +2,6 @@
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-:root {
-  --accent-color: #2196f3;
-  --main-text-color: #212121;
-  --secondary-text-color: #757575;
-  --header-logo-sec-color: #000000;
-  --header-border-btm-cl: #ececec;
-  --text-color-light: #ffffff;
-  --background-color-light: #ffffff;
-  --secondary-bg-color-light: #f5f4fa;
-  --secondary-bg-color-dark: #2f303a;
-  --hero-bg-color: #c4c4c4;
-  --modal-btn-hover-color: #188ce8;
-  --blackout-dark: rgba(47, 48, 58, 0.8);
-  --icon-color: #afb1b8;
-  --portfolio-btn-active-color: #ffffff;
-  --border-color: #eeeeee;
-  --footer-link-color: rgba(255, 255, 255, 0.6);
-  --footer-link-bg: rgba(255, 255, 255, 0.1);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .visually-hidden {
   /* Main - Характерные черты компании */
   /* Portfolio - Projects List */
@@ -57,14 +13,6 @@ img {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
 }
 
 .section {
@@ -120,11 +68,6 @@ img {
   letter-spacing: 0.03em;
 }
 /* === END COMPONENTS=== */
-
-.main-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--main-text-color);
-}
 
 /* ===HEADER=== */
 .header {
