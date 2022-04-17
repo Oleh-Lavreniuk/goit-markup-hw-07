@@ -23,10 +23,10 @@
     margin-top: 20px;
 }
 
-.footer-list-item {}
-
-.footer-list-item:not(:first-child) {
-    margin-top: 9px;
+.footer-list-item {
+    &:not(:first-child) {
+        margin-top: 9px;
+    }
 }
 
 .address {
@@ -36,21 +36,21 @@
 .address-link {
     color: var(--text-color-light);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.address-link:hover,
-.address-link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .footer-list-item-link {
     color: var(--footer-link-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-list-item-link:hover,
-.footer-list-item-link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 /* DIV-2 - "footer-icons" */
@@ -64,6 +64,7 @@
 }
 
 .join-list-link {
+    @extend %align;
     background: var(--footer-link-bg);
 }
 
@@ -100,23 +101,24 @@
     color: var(--text-color-light);
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-form-input:focus {
-    outline: none;
-    border-color: var(--accent-color);
-}
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
 
-.footer-form-input::placeholder {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
 
 .footer-form-btn {
+    @extend %align;
     padding: 8px 26px;
     justify-content: space-between;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

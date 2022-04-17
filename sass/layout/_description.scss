@@ -6,12 +6,12 @@
     display: flex;
 }
 
-.desc-list-item:not(:first-child) {
-    margin-left: 30px;
-}
-
 .desc-list-item {
     flex-basis: calc((100% - 90px) / 4);
+
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
 }
 
 .desc-wrapper-icon {

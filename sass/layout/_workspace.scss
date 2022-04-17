@@ -9,10 +9,10 @@
 .work-list-item {
     position: relative;
     flex-basis: calc((100% - 60px) / 3);
-}
 
-.work-list-item:not(:first-child) {
-    margin-left: 30px;
+    &:not(:first-child) {
+        margin-left: 30px;
+    }
 }
 
 .work-item-img {}
