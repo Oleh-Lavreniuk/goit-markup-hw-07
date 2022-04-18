@@ -5,7 +5,7 @@
     background-color: var(--background-color-light);
 }
 
-.logo_theme_dark {
+.logo__theme-dark {
     color: var(--header-logo-sec-color);
 }
 
@@ -13,7 +13,7 @@
     margin-left: 94px;
 }
 
-.header__text_style {
+.header__text-style {
     @include font (500, 14px, 16px, 0.02em);
 }
 
@@ -61,13 +61,13 @@
     margin-left: auto;
 }
 
-.header__contacts_list {
+.header__contacts-list {
     &:not(:first-child) {
         margin-left: 50px;
     }
 }
 
-.header__contacts_link {
+.header__contacts-link {
     @extend %align;
     color: var(--secondary-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -83,8 +83,8 @@
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .header__contacts_link:hover &,
-    .header__contacts_link:focus & {
+    .header__contacts-link:hover &,
+    .header__contacts-link:focus & {
         fill: var(--accent-color);
     }
 }
