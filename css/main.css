@@ -128,7 +128,7 @@ img {
   text-align: center;
 }
 
-.text-style__bold {
+.text-style-bold {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -136,7 +136,7 @@ img {
   text-transform: uppercase;
 }
 
-.text-style__normal {
+.text-style-normal {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

@@ -4,11 +4,11 @@
     text-align: center;
 }
 
-.text-style__bold {
+.text-style-bold {
     @include font (700, 14px, 16px, 0.03em);
     text-transform: uppercase;
 }
 
-.text-style__normal {
+.text-style-normal {
     @include font (400, 14px, 24px, 0.03em);
 }
